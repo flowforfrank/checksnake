@@ -1,0 +1,28 @@
+@keyframes wave {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(2); }
+    100% { transform: scale(1); } 
+}
+
+html, body {
+    font-family: monospace;
+}
+
+.snake {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    margin: 3px;
+}
+
+input.wave {
+    animation: wave 0.4s cubic-bezier(.17, .67, .83, .67);
+}
+
+h1 {
+    text-align: center;
+}
